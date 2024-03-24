@@ -26,6 +26,9 @@ export const GoogleTranslate = () => {
     const scriptExists =
       document?.querySelectorAll(`script[src="${translateScriptUrl}"]`).length >
       0;
+
+    console.log(scriptExists);
+
     setTranslateScriptUrl(translateScriptUrl);
     setScriptExists(scriptExists);
 
