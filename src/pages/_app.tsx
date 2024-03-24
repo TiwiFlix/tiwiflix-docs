@@ -29,7 +29,7 @@ function MyApp(props: MyAppProps) {
   return (
     <React.Fragment>
       <Head>
-        <title>{`${TITLE} - Galaxy template`}</title>
+        <title>{`${TITLE} - TiwiFlix Documentation`}</title>
 
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -38,6 +38,7 @@ function MyApp(props: MyAppProps) {
           content="width=device-width, initial-scale=1, minimum-scale=1"
         />
         <meta name="description" content={DESCRIPTION} />
+        <link rel="icon" type="image/svg+xml" href="./vercel.svg" />
 
         {/*<!-- Twitter Meta Tags -->*/}
         <meta name="twitter:card" content="summary_large_image" />
@@ -71,7 +72,9 @@ function MyApp(props: MyAppProps) {
             <Component {...pageProps} />
           </LayoutDocs>
         ) : (
-          <Component {...pageProps} />
+          <LayoutDocs markdoc={pageProps.markdoc}>
+            <Component {...pageProps} />
+          </LayoutDocs>
         )}
       </ThemeProvider>
     </React.Fragment>

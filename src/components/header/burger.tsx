@@ -1,8 +1,10 @@
 import React from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/20/solid/index.js';
+import { useRouter } from 'next/router';
 
 function Burger() {
   const [active, setActive] = React.useState(false);
+  const router = useRouter();
 
   React.useEffect(() => {
     const aside = document.querySelector('#aside');
@@ -12,7 +14,11 @@ function Burger() {
     } else {
       aside?.classList.add('hidden');
     }
-  }, [active]);
+  }, [active, router?.asPath]);
+
+  React.useEffect(() => {
+    setActive(false);
+  }, [router?.asPath]);
 
   return (
     <button

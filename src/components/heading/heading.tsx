@@ -25,7 +25,7 @@ function Heading(props: HeadingProps) {
           relative
           -ml-4
           pl-4
-
+          text-md
           group
         "
       >

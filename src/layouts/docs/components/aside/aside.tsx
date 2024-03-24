@@ -12,6 +12,7 @@ function Aside() {
       className="
         hidden
 
+        
         z-10
 
         fixed
@@ -25,15 +26,16 @@ function Aside() {
         self-end
         bg-white
 
+        md:pl-4
         backdrop-blur
-        dark:supports-backdrop-blur:bg-gray-900/70
+        dark:supports-backdrop-blur:bg-[#0E1433]
 
         lg:sticky
         lg:block
-        lg:w-64
+        lg:w-[280px]
         lg:h-auto
         lg:bg-transparent
-        lg:dark:bg-transparent
+        lg:dark:bg-[#0E1433]
       "
     >
       <nav
@@ -51,7 +53,7 @@ function Aside() {
           lg:block
           lg:pl-0
           lg:pr-6
-          lg:py-12
+          lg:py-8
 
           dark:bg-transparent
         "
@@ -59,7 +61,7 @@ function Aside() {
       >
         <ul className="space-y-6 pl-1">
           {SIDEBAR.map((item) => (
-            <li key={item.title}>
+            <li key={item.title} className="mb-10  pb-5">
               <h5
                 className="
                   block
@@ -95,28 +97,28 @@ function Aside() {
                             align-middle
                             justify-between
 
-                            py-2
+                            py-3
                             px-3
 
                             text-sm
                             text-slate-500
                             dark:text-slate-400
-                            dark:hover:text-blue-600
+                            dark:hover:text-[#FF9814]
 
                             rounded
 
                             outline-none
                             focus-visible:ring-2
-                            focus-visible:ring-blue-600
-                            dark:focus-visible:ring-blue-600/50
+                            focus-visible:ring-[#FF9814]
+                            dark:focus-visible:ring-[#FF9814]
 
-                            hover:text-blue-600
+                            hover:text-[#FF9814]
 
-                            aria-current-page:bg-blue-50
-                            aria-current-page:text-blue-800
+                            aria-current-page:bg-transparent
+                            aria-current-page:text-text-[#FF9814]
 
-                            dark:aria-current-page:text-blue-500
-                            dark:aria-current-page:bg-blue-600/10
+                            dark:aria-current-page:text-[#FF9814]
+                            dark:aria-current-page:bg-transparent
                           "
                         >
                           {title}

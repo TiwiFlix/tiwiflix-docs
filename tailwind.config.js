@@ -13,7 +13,8 @@ module.exports = {
         '8xl': '90rem',
       },
       fontFamily: {
-        sans: ['InterVariable', ...defaultTheme.fontFamily.sans],
+        display: 'Poppins',
+        // sans: ['InterVariable', ...defaultTheme.fontFamily.sans],
       },
     },
   },

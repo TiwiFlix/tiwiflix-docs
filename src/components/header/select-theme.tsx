@@ -88,6 +88,7 @@ export function SelectTheme() {
           <Listbox.Options
             className="
               absolute
+              left-[-300%]
               mt-1.5
               overflow-auto
               w-32

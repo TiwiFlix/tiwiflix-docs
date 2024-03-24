@@ -9,6 +9,7 @@ import { Pagination } from './components/pagination';
 import { TableOfContents } from './components/table-of-contents';
 
 import { GITHUB_EDIT_URL } from '@/config';
+import { GoogleTranslate } from '@/components/GoogleTranslate';
 
 interface DocsLayoutProps {
   markdoc: Record<string, any> | undefined;
@@ -24,6 +25,7 @@ function DocsLayout(props: DocsLayoutProps) {
       className="
         relative
         px-4
+        md:pl-0
 
         w-full
         max-w-full
@@ -37,7 +39,7 @@ function DocsLayout(props: DocsLayoutProps) {
       <main
         className="
           flex-auto
-
+          md:pl-4
           py-12
           w-full
           max-w-4xl
@@ -52,11 +54,11 @@ function DocsLayout(props: DocsLayoutProps) {
               block
 
               mb-2
-
-              text-3xl
+              text-2xl
+              md:text-4xl
               text-slate-900
               tracking-tight
-              font-semibold
+              font-bold
 
               dark:text-white
             "
@@ -68,7 +70,7 @@ function DocsLayout(props: DocsLayoutProps) {
               block
               mt-0
         
-              text-base
+              text-md
               text-slate-500
 
               dark:text-slate-400
@@ -76,20 +78,21 @@ function DocsLayout(props: DocsLayoutProps) {
           >
             {markdoc?.frontmatter.description}
           </p>
-          <hr className="block my-12 border-gray-200 dark:border-gray-200/10" />
+          <hr className="block my-5 border-gray-200 dark:border-gray-200/10" />
         </header>
 
         {children}
 
-        <div className="mt-24">
+        <div className="mt-24 ">
           <Link
+            className=""
             href={`${GITHUB_EDIT_URL}${
               router.pathname === '/docs'
                 ? `${router.pathname}/index`
                 : router.pathname
             }.md`}
           >
-            <span className="flex items-center mb-6 cursor-pointer text-sm text-slate-600 dark:text-slate-400 hover:underline hover:text-slate-900">
+            <span className="hidden flex items-center mb-6 cursor-pointer text-sm text-slate-600 dark:text-slate-400 hover:underline hover:text-slate-900">
               <PencilSquareIcon className="w-4 h-4 mr-2" />
               Edit this page on GitHub
             </span>
@@ -99,6 +102,7 @@ function DocsLayout(props: DocsLayoutProps) {
       </main>
 
       <TableOfContents contents={markdoc?.content} />
+      <GoogleTranslate />
     </div>
   );
 }

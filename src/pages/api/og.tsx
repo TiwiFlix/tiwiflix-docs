@@ -17,13 +17,13 @@ export default function handler(req: NextRequest) {
       : 'Overview';
     const description = hasDescription
       ? searchParams.get('description')?.slice(0, 100)
-      : 'All you need to start documenting your project...';
+      : 'Welcome to the documentation for our cutting-edge Video on Demand (VOD) Decentralized Application...';
 
     return new ImageResponse(
       (
         <div tw="relative w-full h-full flex flex-col justify-center bg-white">
           <div tw="flex flex-col px-24">
-            <h1 tw="text-4xl text-slate-900 mb-10">Galaxy template</h1>
+            <h1 tw="text-4xl text-slate-900 mb-10">TiwiFLix Docs</h1>
             <span tw="bg-blue-50 px-2 py-1 rounded text-sm text-blue-600">
               {title}
             </span>

@@ -27,8 +27,13 @@ function TableOfContents(props: TableOfContentsProps) {
           sticky
           top-64
         
-          py-12
+          my-12
 
+          pt-5
+
+          bg-[#0E1433]
+          p-4
+          rounded-2xl
           lg:block
         "
       >
@@ -43,6 +48,8 @@ function TableOfContents(props: TableOfContentsProps) {
         
             font-semibold
             tracking-wide
+
+            uppercase
         
           "
         >
@@ -59,12 +66,12 @@ function TableOfContents(props: TableOfContentsProps) {
                     block
                     text-sm
 
-                    ${level === 2 ? 'py-2 font-medium' : 'py-1 ml-4'}
+                    ${level === 2 ? 'py-2 font-medium' : 'py-1 ml-2'}
 
                     ${
                       currentId === id
-                        ? 'text-blue-800 hover:text-blue-900'
-                        : 'text-slate-500 dark:text-slate-300 hover:text-slate-600 dark:hover:text-slate-400'
+                        ? 'text-[#FF9814] hover:text-[#FF9814]'
+                        : 'text-slate-500 dark:text-slate-300 hover:text-slate-600 dark:hover:text-[#FF9814]'
                     }
                   `}
                   >

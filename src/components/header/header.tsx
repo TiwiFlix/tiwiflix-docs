@@ -2,6 +2,7 @@ import Link from 'next/link';
 import dynamic from 'next/dynamic';
 
 import { SelectTheme } from './select-theme';
+import Image from 'next/image';
 
 const Burger = dynamic(() => import('./burger'));
 
@@ -15,6 +16,7 @@ function Header() {
 
         flex
 
+        dark:bg-[#0E1433]
         w-full
         h-[4rem]
         py-3
@@ -25,10 +27,10 @@ function Header() {
         border-gray-200
 
         backdrop-blur
-        supports-backdrop-blur:bg-white/80
+        supports-backdrop-blur:bg-[#fff]
 
         dark:border-gray-800
-        dark:supports-backdrop-blur:bg-gray-900/25
+        dark:supports-backdrop-blur:bg-[#0E1433]
       "
     >
       <div
@@ -49,25 +51,21 @@ function Header() {
       >
         <div className="flex items-center">
           <Burger />
-          <Link
-            href="/"
-            className="
-              flex
-              flex-row
-              items-center
-        
-              font-bold
-              text-gray-600
-
-              dark:text-white
-            "
-            passHref
-          >
-            🔮 Galaxy
-          </Link>
+          <Image
+            src="/tiwi.png"
+            width={30}
+            height={25}
+            alt="Picture of the author"
+          />
+          <span className="hidden md:flex text-md ml-2">TIWIFLIX DOCS</span>
         </div>
 
-        <SelectTheme />
+        <div className="flex items-center gap-3 md:gap-6">
+          <button className="bg-orange-gradient p-2 px-5 rounded-xl text-sm dark:text-[#000000] font-[600]">
+            Launch App
+          </button>
+          <SelectTheme />
+        </div>
       </div>
     </header>
   );
