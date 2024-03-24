@@ -10,7 +10,7 @@ export function useHeadingsObserver(): {
 
   React.useEffect(() => {
     let headings = Array.from(
-      document.querySelectorAll('article :is(h1,h2,h3)')
+      document?.querySelectorAll('article :is(h1,h2,h3)')
     );
 
     let callback = (elements: IntersectionObserverEntry[]) => {

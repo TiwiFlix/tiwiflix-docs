@@ -1,13 +1,10 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 // import './index.css';
 
 export const GoogleTranslate = () => {
   const [language, setSelectedLanguge] = useState('en');
-  const translateScriptUrl =
-    'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
-  const scriptExists =
-    document?.querySelectorAll(`script[src="${translateScriptUrl}"]`).length >
-    0;
+  const [translateScriptUrl, setTranslateScriptUrl] = useState('en');
+  const [scriptExists, setScriptExists] = useState(false);
 
   const googleTranslateElementInit = () => {
     const translate = (window as any).google.translate;
@@ -23,22 +20,32 @@ export const GoogleTranslate = () => {
     }
   };
 
-  if (!scriptExists) {
-    const recaptchaScript = document?.createElement('script');
-    recaptchaScript?.setAttribute('src', translateScriptUrl);
-    document?.body.appendChild(recaptchaScript);
-  } else {
-    setTimeout(() => {
-      googleTranslateElementInit();
+  useEffect(() => {
+    const translateScriptUrl =
+      'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+    const scriptExists =
+      document?.querySelectorAll(`script[src="${translateScriptUrl}"]`).length >
+      0;
+    setTranslateScriptUrl(translateScriptUrl);
+    setScriptExists(scriptExists);
 
-      const lang = document.getElementsByClassName('goog-te-combo');
-      if (lang && lang.length) {
-        lang[0].addEventListener('change', (e: any) => {
-          setSelectedLanguge(e.target.value);
-        });
-      }
-    }, 5000);
-  }
+    if (!scriptExists) {
+      const recaptchaScript = document?.createElement('script');
+      recaptchaScript?.setAttribute('src', translateScriptUrl);
+      document?.body.appendChild(recaptchaScript);
+    } else {
+      setTimeout(() => {
+        googleTranslateElementInit();
+
+        const lang = document?.getElementsByClassName('goog-te-combo');
+        if (lang && lang.length) {
+          lang[0].addEventListener('change', (e: any) => {
+            setSelectedLanguge(e.target.value);
+          });
+        }
+      }, 5000);
+    }
+  }, []);
 
   return (
     <div className="translate-holder">

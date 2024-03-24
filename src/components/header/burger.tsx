@@ -7,7 +7,7 @@ function Burger() {
   const router = useRouter();
 
   React.useEffect(() => {
-    const aside = document.querySelector('#aside');
+    const aside = document?.querySelector('#aside');
 
     if (active) {
       aside?.classList.remove('hidden');
