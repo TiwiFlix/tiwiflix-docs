@@ -12,6 +12,7 @@ import { ThemeProvider } from 'next-themes';
 import { SkipToContent } from '@/components/skip-to-content';
 import { Header } from '@/components/header';
 import { LayoutDocs } from '@/layouts/docs';
+import Script from 'next/script';
 
 interface MyAppProps extends AppProps {
   pageProps: MarkdocNextJsPageProps;
@@ -28,6 +29,7 @@ function MyApp(props: MyAppProps) {
 
   return (
     <React.Fragment>
+      <Script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" />
       <Head>
         <title>{`${TITLE} - TiwiFlix Documentation`}</title>
 
@@ -46,7 +48,6 @@ function MyApp(props: MyAppProps) {
         <meta name="twitter:title" content={TITLE} />
         <meta name="twitter:description" content={DESCRIPTION} />
         <meta name="twitter:creator" content="@mverissimu" />
-
         {/*<!-- Facebook Meta Tags -->*/}
         <meta property="og:url" content={SITE} />
         <meta property="og:type" content="article" />
