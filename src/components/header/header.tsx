@@ -16,7 +16,7 @@ function Header() {
 
         flex
 
-        dark:bg-[#0E1433]
+        dark:bg-[#02061B]
         w-full
         h-[4rem]
         py-3
@@ -30,7 +30,7 @@ function Header() {
         supports-backdrop-blur:bg-[#fff]
 
         dark:border-gray-800
-        dark:supports-backdrop-blur:bg-[#0E1433]
+        dark:supports-backdrop-blur:bg-[#02061B]
       "
     >
       <div
@@ -61,7 +61,10 @@ function Header() {
         </div>
 
         <div className="flex items-center gap-3 md:gap-6">
-          <button className="bg-orange-gradient p-2 px-5 rounded-xl text-sm dark:text-[#000000] font-[600]">
+          <button
+            onClick={() => window.open('https://test.tiwiflix.io/', '_blank')}
+            className="bg-orange-gradient p-2 px-5 rounded-xl text-sm dark:text-[#000000] font-[600]"
+          >
             Launch App
           </button>
           <SelectTheme />

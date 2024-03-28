@@ -28,14 +28,14 @@ function Aside() {
 
         md:pl-4
         backdrop-blur
-        dark:supports-backdrop-blur:bg-[#0E1433]
+        dark:supports-backdrop-blur:bg-[#02061B]
 
         lg:sticky
         lg:block
         lg:w-[280px]
         lg:h-auto
         lg:bg-transparent
-        lg:dark:bg-[#0E1433]
+        lg:dark:bg-[#02061B]
       "
     >
       <nav

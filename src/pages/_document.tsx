@@ -6,11 +6,9 @@ export default function Document() {
       <Head />
       <body
         className="
-          bg-gradient-to-r
+          bg-[#fff]
 
-        dark:from-blue-900/10
-        dark:via-purple-800/10
-        dark:to-blue-600/10
+        dark:bg-[#0E1433]
         "
       >
         <Main />

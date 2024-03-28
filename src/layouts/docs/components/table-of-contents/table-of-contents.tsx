@@ -31,7 +31,7 @@ function TableOfContents(props: TableOfContentsProps) {
 
           pt-5
 
-          bg-[#0E1433]
+          dark:bg-[#02061B]
           p-4
           rounded-2xl
           lg:block
