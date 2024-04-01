@@ -6,26 +6,70 @@ title: Content Management
 
 ---
 
-Seamlessly share your videos with the community by following our step-by-step guide on uploading content. Learn about supported file formats, set privacy preferences, and engage with the community.
+Seamlessly share your videos with the community by following our step-by-step guide on uploading content. Learn about supported file formats and engage with the community.
 
 Follow these steps to share your content with the community:
 
-- **Log In:** - Sign in to your TIWIFLIX Creator Mode account using your registered credentials. If you don't have an account, follow the platform's registration process to create one.
+- **Login:** - Sign in to your TiwiFlix Creator Mode account using your registered credentials. If you don't have an account, follow the platform's registration process to create one.
 
 - **Access Upload Section:** Navigate to the upload section within your user dashboard. This is typically found in a prominent location, such as the main menu or a dedicated "Upload" tab.
 - **Choose Video Files:** Click on the "Upload" button and select the video files you want to upload from your device. The platform may support various video formats, so ensure your content meets the specified requirements.
-- **Add Title and Description** Provide relevant information about your video, including a descriptive title and a detailed description. This helps users understand the content and enhances discoverability.
-- **Set Privacy and Licensing Options:** Choose the privacy settings for your video, such as public, private, or restricted access. Additionally, specify the licensing options available for your content (e.g., All Rights Reserved, Creative Commons).
+- **Add Title and Description:** Provide relevant information about your video, including a descriptive title and a detailed description. This helps users understand the content and enhances discoverability.
 - **Select Thumbnail and Preview:** Upload a custom thumbnail for your video, and if applicable, provide a preview snippet. Thumbnails and previews are crucial for attracting viewers, so make them engaging and representative of your content.
-- **Set Monetization Options:** TIWIFLIX supports monetization. Configure the relevant options; this includes setting a price for pay-per-view, and subscription models, or specifying whether your content is free.
+- **Set Monetization Options:** TiwiFlix supports monetization. Configure the relevant options; this includes setting a token or coin for pay-per-view or specifying whether your content is free.
 - **Confirm Upload and Publish:** Review all the details and configurations before confirming the upload. This is your last chance to make any adjustments. You can also schedule the publishing of your video for a later time.
 - **Wait for Processing:** Depending on the file size, your video may take some time to process. Be patient as the DApp ensures your content is ready for viewing.
 - **Share and Promote:** Once the upload is complete, your video will be available on the platform. Use the provided sharing tools to promote your content on social media or other channels.
 
-By following these steps, you can easily upload your videos to TIWIFLIX, making your content accessible to the platform's audience. Remember to adhere to the platform's content guidelines and community standards to ensure a positive experience for all users.
+By following these steps, you can easily upload your videos to TiwiFlix, making your content accessible to the platform's audience. Remember to adhere to the platform's content guidelines and community standards to ensure a positive experience for all users.
 
-### Privacy and Licensing Options
+### Live Streaming
 
 ---
 
-Understand how to configure privacy settings and choose licensing options that align with your content-sharing preferences. Ensure your content is accessible to the desired audience while maintaining control over its use.
+Operating the live streaming feature of TiwiFlix involves several steps to ensure a seamless and engaging experience for both content creators and viewers:
+
+
+ **Connect Wallet as a Creator:**
+
+- The first step for a content creator is to connect their cryptocurrency wallet to the TiwiFlix Dapp. This wallet connection enables transactions and ensures that the creator receives payments or tips during the live stream.
+- The creator logs into their account on the platform and accesses the live streaming feature.
+
+ **Start a Live Stream:**
+
+- Once the wallet is successfully connected, the creator can choose to start a live stream instantly or schedule it for a future time.
+
+- If starting instantly, the creator selects the "Start Live Stream" option from the dashboard or live streaming interface.
+
+- If scheduling for a future time, the creator specifies the date and time for the live stream to commence. This feature allows for better planning and promotion of the live event.
+
+ **Set Duration of Stream (if Applicable):**
+
+- The creator has the option to set the duration of the live stream if they want to limit the broadcasting time.
+
+- They specify the duration either before starting the live stream or during the setup process.
+
+- Once the set duration elapses, the live stream automatically ends, providing a structured viewing experience for the audience.
+
+ **Set the Maximum Number of Users That Can Join the Stream (if Applicable):**
+
+- In some cases, the creator may want to limit the number of users who can join the live stream concurrently. This feature helps maintain the quality of interaction and prevents overcrowding.
+
+
+- The creator specifies the maximum number of users allowed to join the stream before initiating the live session.
+
+
+- Once the maximum capacity is reached, additional viewers are prevented from joining until existing viewers leave the stream.
+
+ **Share the Live Link:**
+
+- After setting up the live stream parameters, the creator receives a unique live streaming link generated by the TiwiFlix Dapp.
+
+
+- The creator can share this link across various platforms such as social media, email newsletters, or directly with their audience.
+
+
+- Viewers can access the live stream by clicking on the shared link, which redirects them to the TiwiFlix live streaming page.
+
+
+By following these operational steps, content creators can leverage the TiwiFlix live streaming feature to engage with their audience in real-time, foster community interaction, and monetize their content effectively.

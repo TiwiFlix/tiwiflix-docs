@@ -10,7 +10,7 @@ export type SidebarItem = {
 
 export const SIDEBAR: Array<SidebarItem> = [
   {
-    title: 'Introduction',
+    title: '',
     children: [
       {
         title: 'Overview',
@@ -20,10 +20,10 @@ export const SIDEBAR: Array<SidebarItem> = [
         title: 'Getting Started',
         slug: '/get-started',
       },
-      {
-        title: 'Connecting wallets',
-        slug: '/connect-guide',
-      },
+      // {
+      //   title: 'Connecting wallets',
+      //   slug: '/connect-guide',
+      // },
       {
         title: 'Content  Management',
         slug: '/content-management',
@@ -36,14 +36,14 @@ export const SIDEBAR: Array<SidebarItem> = [
         title: 'Payment and Royalties',
         slug: '/payments-and-royalties',
       },
-      {
-        title: 'Access Control and Licensing',
-        slug: '/access-control-and-licensing',
-      },
-      {
-        title: 'User Wallets and Transactions',
-        slug: '/wallets-and-transactions',
-      },
+      // {
+      //   title: 'Access Control and Licensing',
+      //   slug: '/access-control-and-licensing',
+      // },
+      // {
+      //   title: 'User Wallets and Transactions',
+      //   slug: '/wallets-and-transactions',
+      // },
       {
         title: 'Community Guidelines',
         slug: '/guidelines',
@@ -60,6 +60,10 @@ export const SIDEBAR: Array<SidebarItem> = [
         title: 'Updates and Release Notes',
         slug: '/updates',
       },
+      // {
+      //   title: 'FAQ',
+      //   slug: '/faq',
+      // },
       // {
       //   title: 'Guide to connect a Wallet',
       //   slug: '/connect-guide',
