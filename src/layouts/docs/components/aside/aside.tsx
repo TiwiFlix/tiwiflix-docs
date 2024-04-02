@@ -103,7 +103,7 @@ function Aside() {
                             text-sm
                             text-slate-500
                             dark:text-slate-400
-                            dark:hover:text-[#FF9814]
+                            dark:hover:text-[#fff]
 
                             rounded
 

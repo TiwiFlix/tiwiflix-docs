@@ -41,9 +41,12 @@ function Pagination() {
 
             bg-white
             hover:bg-gray-50
+            hover:border-[#ff9814]
             active:bg-gray-100
             dark:active:bg-gray-800/20
             dark:hover:bg-gray-800/10
+            dark:hover:border-[#ff9814]
+            dark:hover:text-[#ff9814]
             dark:bg-gray-800/5
 
               rounded-md
@@ -86,6 +89,7 @@ function Pagination() {
                   text-base
                   text-slate-600
                   dark:text-slate-100
+                  dark:hover:text-inherit
                   md:text-lg
                   font-semibold
 
@@ -123,6 +127,7 @@ function Pagination() {
             hover:border-gray-200
             dark:border-gray-100/5
 
+            hover:border-[#ff9814]
             bg-white
             hover:bg-gray-50
             active:bg-gray-100
@@ -136,6 +141,8 @@ function Pagination() {
               duration-150
               transition-colors
   
+              dark:hover:border-[#ff9814]
+              dark:hover:text-[#ff9814]
               focus:ring-2
             focus:ring-gray-100
             focus:border-gray-200
@@ -161,6 +168,7 @@ function Pagination() {
                   text-base
                   text-slate-600
                   dark:text-slate-100
+                  dark:hover:text-inherit
                   lg:text-lg
 
                   font-semibold
