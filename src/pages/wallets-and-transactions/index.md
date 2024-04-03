@@ -6,7 +6,7 @@ title: User Wallets and Transactions
 
 ---
 
-Discover the steps to set up a cryptocurrency wallet compatible with the TIWIFLIX. Ensure a secure and efficient wallet
+Discover the steps to set up a cryptocurrency wallet compatible with the TiwiFLix. Ensure a secure and efficient wallet
 
 ### Managing Wallet Funds
 

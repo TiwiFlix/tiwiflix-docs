@@ -16,9 +16,9 @@ Follow the wallet provider's instructions to create a new wallet or import an ex
 
 ### Secure Your Wallet
 
-Connect to the TIWIFLIX DApp
+Connect to the TiwiFLix DApp
 
-### Connect to the TIWIFLIX DApp
+### Connect to the TiwiFLix DApp
 
 Navigate to the DApp and look for the option to connect your wallet. This is located in the top right corner of the interface.
 
@@ -28,4 +28,4 @@ Authorize the connection between your wallet and the DApp. This step may require
 
 ### Add Native Token
 
-TIWIFLIX has a native token used for transactions and governance within the platform. To fully participate, you need to add the native token, TIWI to your wallet. This is crucial for accessing the features, making transactions, and earning rewards.
+TiwiFLix has a native token used for transactions and governance within the platform. To fully participate, you need to add the native token, TIWI to your wallet. This is crucial for accessing the features, making transactions, and earning rewards.
