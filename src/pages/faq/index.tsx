@@ -58,7 +58,7 @@ const FAQ = () => {
               <div>
                 <div className="flex items-center h-16">
                   <span className="text-lg text-[#0E1433] dark:text-white font-bold">
-                    How do I sign up for the TIWIFLIX?
+                    How do I sign up for the TiwiFlix?
                   </span>
                 </div>
                 <div className="flex items-center py-2">
@@ -123,7 +123,7 @@ const FAQ = () => {
                 <div className="flex items-center py-2">
                   <span className="text-slate-500 dark:text-slate-400">
                     Uploading your videos to TiwiFlix is a straightforward
-                    process. Refer to the TiwiFliX Documentation for
+                    process. Refer to the TiwiFlix Documentation for
                     step-by-step guide.
                   </span>
                 </div>

@@ -3,7 +3,7 @@ title: Introduction
 description: Welcome to the documentation for our cutting-edge Video on Demand (VOD) Decentralized Application (DApp), TiwiFlix. This comprehensive guide is designed to provide users with detailed information on how to navigate and maximize the features of our decentralized video streaming platform.
 ---
 
-### Overview of the TiwiFLix
+### Overview of the TiwiFlix
 
 ---
 
