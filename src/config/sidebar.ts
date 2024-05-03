@@ -60,10 +60,14 @@ export const SIDEBAR: Array<SidebarItem> = [
         title: 'Updates and Release Notes',
         slug: '/updates',
       },
-      // {
-      //   title: 'FAQ',
-      //   slug: '/faq',
-      // },
+      {
+        title: 'TiwiFlix Operations and Content Creation Guidelines',
+        slug: '/guidelines-guide',
+      },
+      {
+        title: 'FAQ',
+        slug: '/faq',
+      },
       // {
       //   title: 'Guide to connect a Wallet',
       //   slug: '/connect-guide',
