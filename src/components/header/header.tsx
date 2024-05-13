@@ -97,7 +97,7 @@ function Header() {
 
         <div className="flex items-center gap-3 md:gap-6">
           <button
-            onClick={() => window.open('https://test.TiwiFlix.io/', '_blank')}
+            onClick={() => window.open('https://app.TiwiFlix.io/', '_blank')}
             className="bg-orange-gradient p-2 px-5 rounded-xl text-sm dark:text-[#000000] font-[600]"
           >
             Launch App
